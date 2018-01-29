@@ -1,0 +1,169 @@
+<html>
+<head><title>ERROR</title>
+    <style>
+        body {
+            font-family: "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", Helvetica, Arial, Verdana, sans-serif;
+            margin: 5px;
+        }
+
+        .header {
+            background-image: linear-gradient(bottom, rgb(153, 151, 153) 8%, rgb(199, 199, 199) 54%);
+            background-image: -o-linear-gradient(bottom, rgb(153, 151, 153) 8%, rgb(199, 199, 199) 54%);
+            background-image: -moz-linear-gradient(bottom, rgb(153, 151, 153) 8%, rgb(199, 199, 199) 54%);
+            background-image: -webkit-linear-gradient(bottom, rgb(153, 151, 153) 8%, rgb(199, 199, 199) 54%);
+            background-image: -ms-linear-gradient(bottom, rgb(153, 151, 153) 8%, rgb(199, 199, 199) 54%);
+
+            background-image: -webkit-gradient(
+                    linear,
+                    left bottom,
+                    left top,
+                    color-stop(0.08, rgb(153, 151, 153)),
+                    color-stop(0.54, rgb(199, 199, 199))
+            );
+            color: black;
+            padding: 2px;
+            font-weight: normal;
+            border: solid 1px;
+            font-size: 170%;
+            text-align: left;
+            vertical-align: middle;
+            height: 32px;
+            margin-bottom: 10px;
+        }
+
+        .error-div {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAABIAAAASABGyWs+AAAACXZwQWcAAAAgAAAAIACH+pydAAAGGElEQVRYw8WXW2wcVxnHf+fM7NXrdXbdtZ3ipGqCEzvQKmlFoUggwkvvGBoaqVVV5Y0nkCoQPPCAhMQbQlzUh/IWHoh6QUVKZVLxUCGogKZRW9uJkyg0iVzZ2dhre9c7u7M7c87hYWc2M7t2bBASI306O/85+v7/7zLn24H/8yV2u/EcFNvwVNK2X0DKw1qpYaX1gCWlY0m5arRe8JQ6I2DmaVj/nwk4CxO2Zf1aw9dKo6N67+eOZHN7x0gViiSHBmlXa7hrazjLt1i+eKmxUi5bwpg/e8a8PA3X/msBr0MyJ+WvgFOffehY8v7HH5OW78HqGjgOtNrge2AnIJWAgQEYLqBsm3/NvKM/mZ1rYczpRa2/9x3w/iMBM1BCiHfuGRmZevClF9NJ5cP1m9B0+/aa3t/ZDNw3TtuSfPy737trK6sXtTGPPwOruxLwNhSEEHMHpqZGDz93wubKFdio3ZXUGNOHs2cIDh/g6pt/9G8uXLnlGPP5k1Dt5bN60m6lhXj34OTkxKET37SZm4d6oz/KgFRH7yOrBozbwlTWGf7ql6RZrWTcytrxaTj9Ro9OGb3JS/mz0nDxgYnnvmWbuUsdJ6FTY2JmImShqZA83N90UbOXOXDiG4nCcPFoTsqfbluCP8DenJQLx1/+7pBcXILaZl9qo2svFmalb48xkM9hxkf5+29+u9HSenIayn0ZyEr5i0NHpnKy7aGrtW6UehsLozRBRlRQEh3BwzLpWh3h++yfPJRLSvnzvhK8DkPamOl7n3nCUjcXtyXuK0X0WViaAFc9QtSNJe594uu2MubZGcjHBGTgqeFiQQml0K12nDgSpd4iyi4uRMci6Q8xJSWq7SGEZCg/qD14LCYgIcTzoxMHc6qygYk40aETKTFSdh2aANOWhbEsjJSYCK6C/V0LcH+9xvCB/TlbiBdCAXbQMJPZ/fvQjUbXEULAa6/1deyuh0dwNU+e7DSzEOhmi8xn9iI+ujgVE6ChlBwpYcqVjuIgA3IXBMYYtNbd30IIpJQI0ZEa+gPQnk9ieA8GSrESaGNyiWIBrVQntUHqdrq01iiluo0WilBK4fs+WutOr4S9YAyJoRzamMGYAClEve046ETyTr13EKCU6kZ+N4GNCxfwKpVOryQSuOUVhBCbsRIIuN1cWRkaSCfRrdaOTncijgltNPDn5xHZLIn7x3GNh4CVmADgcv3a9YmBY0cxm06nAQH31KlOao3BL5fxbtzAOE73hAt7JXb6RU7PGO44WK5Do1ZHw6WYAN+YM+X5S8dLXziWizVNvY5aWcFfWuq8Idsctb1Yr8DwmRwrUr1yfVMbcyYmwIWZ2mbdai9+gvfBAsaAbrUwrrtllLuJPibIGGQ2hUlIHLdlA+diTXgSqkKIt5b/OevL+8bwqlWU63anW3jyhaa4c9T2Hs0hrsL5EOCJQ/sov7/gS8Mb07AZEwDgav2D5aVy3eSziEL+Dllk0PSRcmcMqx6BUeGykINsksrttboPP4w2aVfACVhGiFevvft+I/XwJCad3DF6tc2MiD4zmRSZhyZY/OusI4V4JTqKYwIA6lr/2Gm6s5/+7UMv/egDmEyqL7VbRR/LViR6sikGvniYpffm2m6r/VFd65/0vqZ9R/tbsMeG+WKpMDL+lWMJ58Jl/NVqvOG26PAoDmCXhhg4epDl9+a9zUp1uQkPbvWfcMvZchbuEXAuk0kf2X/84YxpuDQv3kA5zW1fw9CswSyZyXFEJsmnf/m46bntuTY8+SxUtuLadri9CokxeEUK8WJhtJgaeeSIxG3RurWGv+Gg3RbaU5CwkOkU1lCWxFgBmbS4ff6qX7297rXh9Gn4/llobMcjtsFywACQ+zZMTsOP8vBIOpNS+bFiJj2cxx7MYg+k8ZwmrWqD9lqNjVvrTc9tWRtw/k345dtwFagDTmTdUUA2EDAYXffB2JPw6FH4ch7GUpCzIemD50J9A1Y+hH/8Cc4vdTq9Tud9D9dNOt+MajclyNL53xZmIhusmcBSQJLOd4UJnHqACzTppDy0kHizl/yuPRB5nggIM0A6IE4GuA34EQFtoBUQuwGm7kbwb+eaEEXmuV5dAAAAJXRFWHRjcmVhdGUtZGF0ZQAyMDA5LTExLTEwVDE5OjM4OjI0LTA3OjAwdDKp4gAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxMC0wMi0yMFQyMzoyNjoyNC0wNzowMC7DUNYAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTAtMDEtMTFUMDg6NTc6MzUtMDc6MDCruapPAAAAMnRFWHRMaWNlbnNlAGh0dHA6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUHVibGljX2RvbWFpbj/96s8AAAAldEVYdG1vZGlmeS1kYXRlADIwMDktMTEtMTBUMTk6Mzg6MjQtMDc6MDArg9/WAAAAGXRFWHRTb3VyY2UAVGFuZ28gSWNvbiBMaWJyYXJ5VM/tggAAADp0RVh0U291cmNlX1VSTABodHRwOi8vdGFuZ28uZnJlZWRlc2t0b3Aub3JnL1RhbmdvX0ljb25fTGlicmFyebzIrdYAAAAASUVORK5CYII=') left center no-repeat;
+        }
+
+        .error-text-div {
+            display: inline-block;
+            vertical-align: top;
+            height: 32px;
+        }
+
+        .label {
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .value {
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        pre {
+            font-size: 110%;
+            margin-left: 1.5em;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="error-div"></div>
+    <div class="error-text-div">Error processing request</div>
+</div>
+<div class="label">Context Path:</div>
+<div class="value">/springOrnek1</div>
+<br/>
+<div class="label">Servlet Path:</div>
+<div class="value">/getir</div>
+<br/>
+<div class="label">Path Info:</div>
+<div class="value">null</div>
+<br/>
+<div class="label">Query String:</div>
+<div class="value">null</div>
+<br/>
+<div class="label">Stack Trace:</div>
+<div class="value"></div>
+<br/>
+<pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:326)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:812)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.springframework.orm.hibernate5.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:542)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:426)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:275)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy107.getStudent(Unknown Source)
+	at com.spring.service.StudentServiceImpl.getStudent(StudentServiceImpl.java:20)
+	at com.spring.conroller.StudentController.getir(StudentController.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:114)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	... 42 more
+Caused by: java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.getCache(SessionFactoryImpl.java:770)
+	at org.hibernate.internal.AbstractSharedSessionContract.&lt;init&gt;(AbstractSharedSessionContract.java:142)
+	at org.hibernate.internal.AbstractSessionImpl.&lt;init&gt;(AbstractSessionImpl.java:29)
+	at org.hibernate.internal.SessionImpl.&lt;init&gt;(SessionImpl.java:252)
+	at org.hibernate.internal.SessionFactoryImpl$SessionBuilderImpl.openSession(SessionFactoryImpl.java:1218)
+	at org.hibernate.internal.SessionFactoryImpl.openSession(SessionFactoryImpl.java:450)
+	at org.springframework.orm.hibernate5.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:434)
+	... 64 more
+</pre>
+</body>
+</html>

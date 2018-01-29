@@ -1,0 +1,22 @@
+POST http://localhost:8080/springOrnek1/update?id=1&name=akocak&surname=mustafa&age=33
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/springOrnek1/student?id=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-01-29T103608.200.txt
+
+###
+
+POST http://localhost:8080/springOrnek1/getir?id=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-01-26T040533.500.html
+
+###
+
